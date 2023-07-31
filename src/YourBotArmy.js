@@ -12,15 +12,13 @@ const YourBotArmy = ({ army, releaseFromArmy, dischargeFromService }) =>
           <p>Class: {bot.bot_class}</p>
       <p>Health: {bot.health}</p>
             <p>Damage: {bot.damage}</p>
-         
-         
-     <p>Armor: {bot.armor}</p>
+      <p>Armor: {bot.armor}</p>
           <p>Catchphrase: {bot.catchphrase}</p>
           <button onClick={()=> releaseFromArmy(bot)}>Release from Army</button>
-          <button onClick={() => dischargeFromService(bot.id)}>Discharge from Service</button>
+          <button onClick={ ()  => dischargeFromService(bot.id)}>Discharge from Service</button>
         </div>
       ))}
-          </div>
+        </div>
   );
 };
 
